@@ -2,7 +2,7 @@ This is a very simple read-only serial terminal that reads Serial1 and prints th
 
 http://www.seeedstudio.com/wiki/TFT_Touch_Shield_V1.0
 
-I wrote it to be connected to the Mighty Ohm Geiger Counter v1.0
+I wrote it so I could see the Mighty Ohm Geiger Counter's serial output in a portable way.
 
 http://mightyohm.com/blog/products/geiger-counter/
 
