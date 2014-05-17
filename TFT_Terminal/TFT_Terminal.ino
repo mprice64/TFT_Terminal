@@ -66,7 +66,9 @@ void loop()
       Tft.drawString( curLine, y, 320, 1, WHITE );
       y += 10;
       curByte = curLine;
-      Serial.print( y, DEC );
+
+//      Serial.print( y, DEC );
+
       if ( y >= 240 ) {
         Tft.clear();
         y = 10;
