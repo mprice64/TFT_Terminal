@@ -30,11 +30,12 @@
   #define XP 57   // can be a digital pin, this is A3 
 #endif 
 
-int y = 10;
+int y = 10; // The starting position for terminal output, offset to make room for the headline
 char curLine[2048];
 char * curByte;
 
-char * headline = ">>====---- TFT SERIAL MONITOR ----====<<";
+// 40 col width.
+char * headline = ">- TFT SERIAL MON (mprice 2014-05-16) -<";
 
 void setup()
 {
@@ -59,7 +60,7 @@ void loop()
     // Serial.print( inByte, DEC );
     
     *curByte++ = inByte;
-    
+
     if ( inByte == '\n' ) {
       *curByte = 0;
 
@@ -73,9 +74,9 @@ void loop()
         Tft.clear();
         y = 10;
         Tft.drawString(headline, 0, 320, 1, RED);
-
       }        
     }
   }
 
 }
+
