@@ -31,7 +31,7 @@
 #endif 
 
 int y = 10;
-char curLine[256];
+char curLine[2048];
 char * curByte;
 
 char * headline = ">>====---- TFT SERIAL MONITOR ----====<<";
